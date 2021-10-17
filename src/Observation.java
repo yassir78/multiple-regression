@@ -1,4 +1,4 @@
-package multipleLinearRegression;
+
 
 import java.util.LinkedHashMap;
 
@@ -8,7 +8,6 @@ import java.util.Set;
 public class Observation {
 	private LinkedHashMap<String, Double> features = new LinkedHashMap<String, Double>();
 
-	// Mutators and accessors.
 	public void putFeature(String feature, double value) {
 		features.put(feature, value);
 	}
@@ -23,7 +22,7 @@ public class Observation {
 
 	public Set<String> getFeatures() {
 		return features.keySet();
-	} // Iterator over features.
+	} 
 
 
 

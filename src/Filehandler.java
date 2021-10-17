@@ -1,4 +1,3 @@
-package multipleLinearRegression;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -7,7 +6,6 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class Filehandler {
-	// Reads the input file and outputs a Observation ArrayList.
 	public static Observation[] read(String filePath) {
 		File input = new File(filePath);
 		BufferedReader reader = null;
@@ -17,8 +15,7 @@ public class Filehandler {
 		try {
 			String text = null;
 
-			// Initialises the BufferedReader, determines the size of the file and sets the
-			// array accordingly.
+			
 			reader = new BufferedReader(new FileReader(filePath));
 			int size = -1;
 			while ((text = reader.readLine()) != null) {
@@ -26,7 +23,7 @@ public class Filehandler {
 			}
 			obsArr = new Observation[size];
 
-			// Reinitialises the BufferedReader and reads each row into an Observation
+			
 			// object in the array.
 			reader = new BufferedReader(new FileReader(filePath));
 			String[] features = reader.readLine().split(",");
